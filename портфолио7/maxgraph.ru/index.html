@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>разработка сайтов</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/maxgraph.ru/img/favicon/favicon.ico" type="image/x-icon">
+	<style>
+		html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}.container{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.container-fluid{margin-right:auto;margin-left:auto;padding-left:15px;padding-right:15px}.row{margin-left:-15px;margin-right:-15px}.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{position:relative;min-height:1px;padding-left:15px;padding-right:15px}.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media (min-width:768px){.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media (min-width:992px){.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media (min-width:1200px){.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after{content:" ";display:table}.clearfix:after,.container:after,.container-fluid:after,.row:after{clear:both}.center-block{display:block;margin-left:auto;margin-right:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}
+	</style>
+	<style>
+  /* Прелоадер */
+	.loaderArea {
+	  background: rgb(41,44,56);
+	  overflow: hidden;
+	  position: fixed;
+	  left: 0;
+	  top: 0;
+	  right:0;
+	  bottom:0;
+	  z-index: 100000;
+	}
+  .load5 {
+    margin-top: 23%;
+  }
+  /* Скроллбар */
+  ::-webkit-scrollbar{
+    width:8px;
+}
+  ::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: #777;
+    background-color: #0584c0;
+    border-radius: 4px
+}
+  ::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: #555;
+    background-color: rgb(97,104,132);
+}
+  ::-webkit-scrollbar-track{
+    border-width:0;
+}
+  ::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+  /*  Header */
+		*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}* a:focus{text-decoration:none;outline:0}* a:hover{text-decoration:none}html{font-size:10px}body{overflow-x:hidden}section{padding-top:7rem;padding-bottom:7rem}@keyframes rot{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.rot{float:left}.rot img{-webkit-animation:rot 2s infinite linear;animation:rot 2s infinite linear;width:35px;height:35px}.rot2{float:left;position:relative;left:-18px}.rot2 img{-webkit-animation:rot 2s infinite linear;animation:rot 2s infinite linear;height:35px;width:45px}.logo-text a{margin-left:-15px;position:relative;top:2px;color:#fff;font-size:2rem;font-family: 'MuseoSansBold',sans-serif;font-weight:400}.logo-text a span {color: rgb(5,132,192);}@-webkit-keyframes rot{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.header{background-image:url(img/bg1.jpg);background-size:cover;background-attachment: fixed;background-position:center center;background-repeat:no-repeat;height:100vh;min-height:60rem;}.header-scroll{display:none;position:fixed;width:7%;text-align:center;z-index:4;left:1.5%;bottom:2%;background-color:rgba(41,44,56,.4);border:3px solid #fff;-webkit-border-radius:10px;border-radius:10px;-webkit-box-shadow:0 0 5px rgba(0,0,0,.4);box-shadow:0 0 5px rgba(0,0,0,.4)}.header-scroll ul{margin-bottom:0;list-style:none}.header-scroll ul li:hover{background-color:#fff;-webkit-transition:all 1s;transition:all 1s}.header-scroll ul li:hover a{color:#32272f}.header-scroll ul li a{padding:20px 3px;display:block;color:#fff;font-family:'MuseoSansMedium',sans-serif;font-weight:300}.header-scroll ul li.active {background-color: #fff;color:#32272f;transition: all 0.5s;}.header-scroll ul li.active a {color:#32272f;}.header-scrolling{color:#fff;font-size:4rem;text-align:center;z-index:4;position:relative;margin-top:6%}.header-scrolling a{border:1px transparent solid;-webkit-border-radius:50%;padding: 0 1rem;border-radius:50%;color:#fff}.header-scrolling a:hover{background-color:#507299;color:#fff;-webkit-transition:all 1s;transition:all 1s; }.header-content{height:100vh;min-height:60rem}.header-logo{padding-top:2rem;position:relative;z-index:2;overflow:hidden}.header-btn{display:block;width:200px;height:50px;position:relative;border:none;margin:0 auto;margin-top:6rem;-webkit-border-radius:25px;border-radius:25px;z-index: 1;background-color:#507299;color:#fff;outline:0;text-transform:uppercase;font-family: 'MuseoSansBold';line-height:51px;text-align:center}.header-btn:after{content:'';transform: translateX(-50%) translateY(-50%);position: absolute;top: 0;left: 50%;top: 50%;z-index: -1;background: none repeat scroll 0 0 #3caae0;width: 0%;color:#fff;opacity: 0;border-radius: 25px;height: 50px;transition:all .5s;}.header-btn:hover:after{height: 100%;width: 100%;opacity: 1;}.header-btn:hover{color: #fff; text-shadow: none;
+    }.header-btn:focus{color:#fff}.header-nav{padding-top:1rem;position:relative;text-align:right;line-height:5rem;z-index:2}.header-nav ul li{padding:0 20px;display:inline-block;}.header-nav ul li a{font-family: 'MuseoSansMedium';color:#fff;font-size:1.4rem;text-transform:uppercase;display:block;position: relative;}.header-nav ul li a:before{content:'';display: inline-block; top: 37px;height: 2px; position: absolute; width: 0px; background-color: rgb(5,132,192);}.header-nav ul li a:hover:before{width: 100%;transition: all .5s;} .header-nav ul li a:hover{text-decoration:none}.header-nav ul li a:focus{text-decoration:none}.header-text{position:relative;z-index:2;text-align:center;color:#fff;font-family:Ubuntu,sans-serif;font-weight:500}.header-text h1{font-size:6rem;font-family: 'MuseoSansBold';letter-spacing:3px;text-transform:uppercase;margin-bottom:2rem;margin-top:22rem}.header-text p{font-size:3rem;letter-spacing:2px;font-family: 'MuseoSansMedium'}
+	</style>
+</head>
+<body>
+<div class="loaderArea">
+   <div class="load5">
+     <div class="loader">Loading...</div>
+   </div>
+</div>
+<div class="header-scroll">
+	<ul>
+		<li><a href="#about">О себе</a></li>
+		<li><a href="#portfolio">Портфолио</a></li>
+    <li><a href="#services">Услуги</a></li>
+    <li><a href="#testimonails">Отзывы</a></li>
+		<li><a href="#contacts">Контакты</a></li>
+	</ul>
+</div>
+<header class="header">
+	<div class="header-mobile">
+    <div class="header-logo-mobile">
+          <div class="rot">
+            <img src="img/8.png" alt="Левый полукруг">
+          </div>
+          <div class="rot2">
+            <img src="img/10.png" alt="Правый полукруг">
+          </div>
+          <div class="logo-text">
+            <a href="#"><span>В</span>е<span>р</span>c<span>т</span>к<span>а</span></a>
+          </div>
+        </div>
+		<a href="#menu" class="menu-link">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</a>
+	</div>
+	<div class="menu">
+		<ul>
+		<li><a href="#about">О себе</a></li>
+		<li><a href="#portfolio">Портфолио</a></li>
+		<li><a href="#services">Услуги</a></li>
+    <li><a href="#testimonails">Отзывы</a></li>
+    <li><a href="#contacts">Контакты</a></li>
+	</ul>
+	</div>
+	<div class="header-content">
+		<div class="container">
+		<div class="header-top-block">
+			<div class="col-md-3">
+				<div class="header-logo">
+					<div class="rot">
+						<img src="img/8.png" alt="Левый полукруг">
+					</div>
+					<div class="rot2">
+						<img src="img/10.png" alt="Правый полукруг">
+					</div>
+					<div class="logo-text">
+						<a href="#"><span>В</span>е<span>р</span>c<span>т</span>к<span>а</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="header-nav">
+					<ul>
+						<li><a href="#about">О себе</a></li>
+						<li><a href="#portfolio">Портфолио</a></li>
+						<li><a href="#services">Услуги</a></li>
+            <li><a href="#testimonails">Отзывы</a></li>
+						<li><a href="#contacts">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="header-text">
+			<h1>Профессиональная верстка сайтов</h1>
+		</div>
+		<div class="header-btn-area">
+			<a href="#contacts" class="header-btn">Заказать сайт</a>
+		</div>
+	</div>
+	</div>
+</header>
+<section class="about" id="about">
+	<h2>О себе</h2>
+  <div class="container">
+    <div class="row">
+      <div class="about-content">
+        <div class="about-content-left wow bounceInLeft">
+          <div class="about-content-photo">
+            <img src="img/9e9mwdc0COY.jpg" alt="Мое фото">
+          </div>
+        </div>
+        <div class="about-content-right wow bounceInRight">
+          <div class="about-content-right-name">
+            <h3>Меня зовут <span>Игорь Привалов</span></h3>
+            <p>Я веб-разработчик</p>
+          </div>
+          <div class="about-content-right-line"></div>
+          <div class="about-content-right-list">
+            <div class="about-content-right-list">
+              <span class="about-content-right-list-one">
+                <p>Возраст</p>
+                <p>Город</p>
+                <p>E-mail</p>
+                <p>Телефон</p>
+              </span>
+              <span class="about-content-right-list-two">
+                <p>32</p>
+                <p>Санкт-Птербург</p>
+                <p>igorianych@mail.ru</p>
+                <p>+7 (904) 630-30-05</p>
+              </span>
+              <span class="about-content-right-social">
+                  <ul>
+                    <li><a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="portfolio" id="portfolio">
+<section class="services" id="services">
+  <h2>Услуги</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="services-item">
+          <img src="#" alt="Адаптивная верстка">
+          <span>Адаптивная верстка сайтов</span>
+          <p>Сделаю адаптив для уже готового сайта, либо сверстаю по Вашему дизайн-макету.</p>
+          <span class="services-item-price">от 1500 руб.</span>
+          <a href="#modal-respon" class="services-item-order go">Заказать</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="services-item">
+          <img src="/maxgraph.ru/img/wordpress.svg" alt="Работа с Wordpress">
+          <span>Посадка верстки на CMS Wordpress</span>
+          <p>Быстро и качественно сделаю посадку верстки на CMS Wordpress.</p>
+          <span class="services-item-price">от 2500 руб.</span>
+          <a href="#modal-wp" class="services-item-order go">Заказать</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="services-item">
+          <img src="/maxgraph.ru/img/spinner.svg" alt="Оптимизация скорости загрузки">
+          <span>Оптимизация скорости загрузки вашего сайта</span>
+          <p>Скорость загрузки страницы на Вашем сайте очень важна, и поэтому я предлагаю услугу по оптимизации (ускорению) загрузки веб-страниц.</p>
+          <span class="services-item-price">от 300 руб.</span>
+          <a href="#modal-optim" class="services-item-order go">Заказать</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="services-item">
+          <img src="/maxgraph.ru/img/profile.svg" alt="Создание сайта под ключ">
+          <span>Создание сайта "под ключ"</span>
+          <p>Полное создание сайта (с дизайн-макетом, оптимизацией и адаптивностью, если это потребуется). Установка на хороший хостинг.</p>
+          <span class="services-item-price">от 9000 руб.</span>
+          <a href="#modal-key" class="services-item-order go">Заказать</a>
+        </div>
+      </div>
+    </div>
+    <div class="services-btn-area">
+      <a href="#modal-calc" class="modal-calc go">Рассчитать цену сайта</a>
+    </div>
+  </div>
+</section>
+<section class="testimonails" id="testimonails">
+  <h2>Отзывы</h2>
+  <div class="container">
+    <div class="row">
+      <div class="test-slider">
+        <div class="testim test-8">
+          <blockquote>Благодарю за быструю и качественную работу. Максим всегда на связи, замечания и правки оперативно вносит. Понравился подход к разработке сайта! Сайт получился качественный и очень удобный! Спасибо! Очень доволен сотрудничеством и рекомендую всем!</blockquote>
+          <img src="#" alt="">
+          <p>Шевкет Фахриев</p>
+        </div>
+        <div class="testim test-1">
+          <blockquote>Мне нужен был лендинг для сбора заявок и рассылки писем по ним. Обратился за помощью к специалистам и Максим быстро откликнулся на мою просьбу. Честно, я впервые заказывал подобную услугу, но Макс с полуслова понял, что именно мне нужно. Сделал все быстро и качественно. Для меня важно было, чтобы моя проблема была просто решена без лишних мучений для меня, и Макс отлично справился с этой задачей. В общем, рекомендую!</blockquote>
+          <img src="#" alt="">
+          <p>Олег Савенко</p>
+        </div>
+        <div class="testim test-2">
+          <blockquote>Максим сделал доработки по адаптации под мобильные устройства, сделал все качественно и очень быстро.
+          Очень общительный и терпеливый человек!</blockquote>
+          <img src="#" alt="">
+          <p>Андрей Кокорин</p>
+        </div>
+        <div class="testim test-3">
+          <blockquote>Сделал все отлично! Всегда в сети, отвечает моментально! Всем рекомендую!</blockquote>
+          <img src="#" alt="">
+          <p>Вардан Петросян</p>
+        </div>
+        <div class="testim test-4">
+          <blockquote>Максим специалист выше всех похвал. Чуткий профессионал, к которому хочется еще раз обратиться. Спасибо!</blockquote>
+          <p>Илья Лященко</p>
+        </div>
+        <div class="testim test-5">
+          <blockquote>Отличный подрядчик, сделал все качественно и в срок. Учел все требования. Все время был на связи. Всем рекомендую.</blockquote>
+          <img src="#" alt="">
+          <p>Денис Пополитов</p>
+        </div>
+        <div class="testim test-6">
+          <blockquote>Максим отличный верстальщик. Приятен в общении, очень терпеливый. Проект был не из простых но он справился с ним превосходно. В общем всем рекомендую, соотношение цена качество на твердую 5. Буду обращаться еще!</blockquote>
+          <img src="#" alt="">
+          <p>Максим Язьков</p>
+        </div>
+      </div>
+      <a href="#" target="_blank" class="alltest">Все отзывы</a>
+    </div>
+  </div>
+</section>
+<section class="contacts" id="contacts">
+	<h2 class="z">Контакты</h2>
+	<div class="container">
+		<div class="row">
+			<div class="contacts-content">
+					<form class="form" id="form">
+					<h3 class="form-naz">Оставьте Вашу заявку, я свяжусь с Вами,и мы определим, что нужно именно Вам!</h3>
+					<input type="hidden" name="project_name" value="Заказ на верстку">
+					<input type="hidden" name="admin_email" value="igorianych@mail.ru">
+					<input type="hidden" name="form_subject" value="Заявка с сайта MaxGraph">
+					<input class="form-input" id="input-name" name="Имя"  placeholder="Ваше ФИО" type="text">
+					<input class="form-input" id="input-email" placeholder="Ваш e-mail" name="e-mail" type="email">
+					<input class="form-input" id="input-phone" placeholder="Ваш телефон" name="Телефон" type="text">
+					<input class="form-input" id="input-msg" placeholder="Опишите вашу задачу" name="Message" type="text">
+              <span id="validMail"></span>
+              <span id="validName"></span>
+              <span id="validPhone"></span>
+              <span id="validMsg"></span>
+						<button type="button" class="contacts-btn">Отправить</button>
+					</form>
+					<div class="contacts-conts">
+            <ul>
+              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+79046303005"> +7(904)6303005</a></li>
+              <li><i class="fa fa-skype" aria-hidden="true"></i>  igorek051185</li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i> igorianych@mail.ru</li>
+            </ul>
+          </div>
+          <div class="contacts-follow">
+            <ul>
+              <li><a href="#" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+            </ul>
+          </div> 
+			</div>
+		</div>
+	</div>
+ <!--  </div> -->
+</section>
+<div class="scrollup">
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+</div>
+<footer class="footer">
+	<p>Copyright ,Привалов Игорь</p>
+</footer>
+<div id="modal-calc" class="calc popup">
+  <a href="#close" class="popup-close">&times;</a>
+  <h2>Рассчет стоимости</h2>
+              <h3>Многостраничный сайт?</h3>
+              <div class="join1"></div>
+              <span>да</span>
+                        <br>
+                        <div class="mnogo">
+                            <label for="card_edition" id="card_edition_label">Выберите кол-во страниц</label><br>
+                            <select class="form-control" name="edition" id="card_edition">
+                                <option value="2000">2 страницы</option>
+                                <option value="4000">3 страницы</option>
+                                <option value="6000">4 страницы</option>
+                                <option value="8000">5 страниц</option>
+                                <option value="10000">6 страниц</option>
+                                <option value="12000">7 страниц</option>
+                                <option value="14000">8 страниц</option>
+                                <option value="16000">9 страниц</option>
+                                <option value="18000">10 страниц</option>
+                            </select>
+                        </div>
+                        <div class="odno">
+                             <label for="card_edition">Выберите кол-во экранов</label><br>
+                            <select class="form-control" name="edition" id="card_edition_1">
+                                <option value="500">1 экран</option>
+                                <option value="1000">2 экрана</option>
+                                <option value="1500">3 экрана</option>
+                                <option value="2000">4 экрана</option>
+                                <option value="2500">5 экранов</option>
+                                <option value="3000">6 экранов</option>
+                                <option value="3500">7 экранов</option>
+                                <option value="4000">8 экранов</option>
+                                <option value="4500">9 экранов</option>
+                                <option value="5000">10 экранов</option>
+                            </select>
+                        </div>
+              <br>
+              <select class="form-control" name="srv" id="serv">
+                <option value="0">по макету</option>
+                <option value="5000">с нуля</option>
+              </select>
+              <br><br>
+              <div class="join2"></div> <span data-val="2000" id="spanval">Адаптив+мобильная версия</span>
+              <br>
+                        <br>
+              <div class="join3"></div> <span data-val="1500" id="spanadm">Админка</span>
+              <br><br>
+              <h4>
+                <small>Приблизительная</small> <br>
+                Стоимость
+              </h4>
+              <p class="price">
+                <span id="final_price">0</span>
+                Руб.
+              </p>
+</div>
+<div id="modal-respon" class="popup">
+  <a href="#close" class="popup-close" id="rest">&times;</a>
+  <form class="form" id="form1">
+          <h3 class="form-naz">Оставьте Вашу заявку на адаптив сайта</h3>
+          <input type="hidden" name="project_name" value="Заявка на адаптив">
+          <input type="hidden" name="admin_email" value="igorianych@mail.ru">
+          <input type="hidden" name="form_subject" value="Заявка на адаптив">
+          <input class="form-input" id="input-email1" placeholder="Ваш e-mail" name="e-mail" type="email">
+          <input class="form-input" id="input-msg1" placeholder="Опишите вашу задачу" name="Message" type="text">
+            <button type="submit" class="contacts-btn">Отправить</button>
+          </form>
+</div>
+<div id="modal-wp" class="popup">
+  <a href="#close" class="popup-close" id="rest">&times;</a>
+  <form class="form" id="form2">
+          <h3 class="form-naz">Оставьте Вашу заявку на натяжку макета на WordPress</h3>
+          <input type="hidden" name="project_name" value="Заявка на натяжку">
+          <input type="hidden" name="admin_email" value="igorianych@mail.ru">
+          <input type="hidden" name="form_subject" value="Заявка на натяжку">
+          <input class="form-input" id="input-email2" placeholder="Ваш e-mail" name="e-mail" type="email">
+          <input class="form-input" id="input-msg2" placeholder="Опишите вашу задачу" name="Message" type="text">
+            <button type="submit" class="contacts-btn">Отправить</button>
+          </form>
+</div>
+<div id="modal-optim" class="popup">
+  <a href="#close" class="popup-close" id="rest">&times;</a>
+  <form class="form" id="form3">
+          <h3 class="form-naz">Оставьте Вашу заявку на оптимизацию скорости сайта</h3>
+          <input type="hidden" name="project_name" value="Заявка на оптимизацию">
+          <input type="hidden" name="admin_email" value="igorianych@mail.ru">
+          <input type="hidden" name="form_subject" value="Заявка на оптимизацию">
+          <input class="form-input" id="input-email3" placeholder="Ваш e-mail" name="e-mail" type="email">
+          <input class="form-input" id="input-msg3" placeholder="Опишите вашу задачу" name="Message" type="text">
+            <button type="submit" class="contacts-btn">Отправить</button>
+          </form>
+</div>
+<div id="modal-key" class="popup">
+  <a href="#close" class="popup-close" id="rest">&times;</a>
+  <form class="form" id="form4">
+          <h3 class="form-naz">Оставьте Вашу заявку на создание сайта под ключ</h3>
+          <input type="hidden" name="project_name" value="Заявка под ключ">
+          <input type="hidden" name="admin_email" value="igorianych@mail.ru">
+          <input type="hidden" name="form_subject" value="Заявка под ключ">
+          <input class="form-input" id="input-email4" placeholder="Ваш e-mail" name="e-mail" type="email">
+          <input class="form-input" id="input-msg4" placeholder="Опишите вашу задачу" name="Message" type="text">
+              <span id="validMail"></span>
+              <span id="validMsg"></span>
+            <button type="submit" class="contacts-btn">Отправить</button>
+          </form>
+</div>
+<script src="/maxgraph.ru/libs/jquery/jquery-2.1.3.min.js"></script>
+<script src="/maxgraph.ru/libs/slick/slick.min.js"></script>
+<script src="/maxgraph.ru/libs/jquery.maskedinput.min.js"></script>
+<script src="/maxgraph.ru/libs/common.js"></script>
+<script src="/maxgraph.ru/libs/nav.js"></script>
+<script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter45503529 = new Ya.Metrika({ id:45503529, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "../mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/45503529" style="position:absolute; left:-9999px;" alt="" /></div></noscript> 
+<link rel="stylesheet" href="/maxgraph.ru/css/load5.css">
+<link rel="stylesheet" href="/maxgraph.ru/css/second.min.css">
+<link rel="stylesheet" href="/maxgraph.ru/libs/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/maxgraph.ru/css/normalize.css">
+<link rel="stylesheet" href="/maxgraph.ru/libs/slick/slick.css">
+<link rel="stylesheet" href="/maxgraph.ru/libs/slick/slick-theme.css">
+</body>
+</html>
